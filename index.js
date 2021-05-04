@@ -17,5 +17,9 @@ function findMatching(drivers, args){
 function fuzzyMatch(drivers, args){
   let l = args.length
   return drivers.filter( f  =>  f.slice(0,l).toLowerCase() === args.toLowerCase()
-
   )}
+
+  function matchName(drivers, args){
+     return drivers.filter( f  =>  f.name.toLowerCase() === args.toLowerCase()
+    
+  }
